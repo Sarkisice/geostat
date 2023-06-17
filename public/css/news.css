@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background: linear-gradient(120deg,  #1349a1, #29984b);
+    background-size: cover;
+}
+
+.news-main {
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.news-container{
+    width: 1350px;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-blocks{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    width: 100%;
+}

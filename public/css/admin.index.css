@@ -1,0 +1,31 @@
+.col-md-12 {
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.container-index{
+    margin-top: 250px;
+    width: 1350px;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    flex-flow: column;
+    padding: 25px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-table{
+    min-width: 1200px;
+}
+
+.table{
+    width: 100%;
+}

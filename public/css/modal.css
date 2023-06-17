@@ -1,0 +1,61 @@
+/*Авторизация*/
+
+.popup_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.modal_eq_body {
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: auto;
+    border-radius: 50px;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+}
+
+
+.modal_eq{
+    padding: 0 25px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    pointer-events: all;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+#close{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.left-up{
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+
+.right-up{
+    width: 50%;
+    height: auto;
+    padding-left: 20px;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.img-up{
+    width: 100%;
+    border-radius: 25px 25px 10px 10px;
+    padding: 7px;
+}

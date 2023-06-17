@@ -1,0 +1,113 @@
+footer{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;
+    background-color: transparent;
+
+}
+.li-footer .a-nav-footer:hover,
+.li-footer .a-nav-footer:focus{
+    color: #4b50b4;
+    border-bottom: 2px solid #6e4bb4;
+}
+
+.footer-container{
+    width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background: rebeccapurple;
+}
+
+.footer-block{
+    width: 25%;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.a-footer-main{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    transition: .5s;
+}
+
+.a-footer-main:hover{
+    color: white;
+}
+
+/*Соцсети*/
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+.social-icons>li {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.social-icons a {
+    position: relative;
+    background-color: transparent;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: background-color .3s ease-in-out;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+}
+.social-icons a:hover {
+    background-color: #bba6ff;
+}
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    left: .65rem;
+    top: .65rem;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.a-nav-footer{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+    font-size: 16px;
+    text-align: center;
+}
+
+.li-footer{
+    list-style: none;
+    width: 100%;
+    margin-left: -13px;
+}
+
+.navigation-footer{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+/*.social-icons .social-icon-whatsapp::before {*/
+/*    background: url("/img/etc/wh.png");*/
+/*}*/
+/*.social-icons .social-icon-telegram::before {*/
+/*    background: url("/img/etc/tel.png");*/
+/*}*/

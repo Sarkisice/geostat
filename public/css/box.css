@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    background: linear-gradient(120deg,  #1349a1, #29984b);
+    background-size: cover;
+}
+
+.box-container{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 50px 25px;
+    flex-wrap: wrap;
+    background: transparent;
+}
+
+.box-container-pic{
+    display: flex;
+    width: 1350px;
+    justify-content: center;
+}
+
+.box-container-about{
+    width: 1350px;
+    display: flex;
+    flex-flow: column;
+    font-size: 18px;
+    padding: 25px 0;
+    row-gap: 25px;
+    transition: .5s all;
+}
+
+.box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    animation: fade-in-opacity 2.5s;
+}
+
+@keyframes fade-in-opacity {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.box-head{
+    display: flex;
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    align-items: center;
+    max-height: 500px;
+    transition: .5s ;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.box-head:hover{
+    background-color: #396cbe;
+    color: white;
+}
+
+.box-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box-left{
+    border-radius: 25px;
+    width: 39%;
+    height: auto;
+    transition: .5s all;
+}
+
+@keyframes fade-in-left {
+    0% {transform: translateX(-125%); opacity: .5}
+    100% {transform: translateY(0); opacity: 1}
+}
+
+@keyframes fade-in-right {
+    0% {transform: translateX(125%); opacity: .5}
+    100% {transform: translateY(0); opacity: 1}
+}
+
+
+.box-right {
+    width: 59%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 25px;
+    transition: .5s ;
+    color: black;
+    text-decoration: none;
+}
+
+.box-right:hover{
+    background-color: #396cbe;
+    color: white;
+}
+
+.box-right-column{
+    display: flex;
+    flex-flow: column;
+    width: 49%;
+    font-size: 20px;
+    transition: .1s all;
+    max-height: 305px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 1000px) {
+
+
+    .box-left{
+        width: 29%;
+    }
+
+    .box-right{
+        width: 69%;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .box-container-about{
+        width: 550px;
+    }
+
+    .box-content{
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .box-left{
+        width: 100%;
+        height: 200px;
+    }
+
+    .box-right{
+        width: 100%;
+    }
+
+    .box-right-column{
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    /*background: url(../img/bg/index3.jpg) no-repeat fixed;*/
+    background: linear-gradient(120deg,  #1349a1, #0a8c33);
+    background-size: cover;
+}
+
+/*Главный контейнер*/
+
+.index-pic {
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.index-pic-start{
+    width: 1350px;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    padding: 25px;
+    height: 1080px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Контейнер о нас*/
+
+.index-container{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 50px 25px;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+.index-container-about{
+    width: 1350px;
+    display: block;
+    flex-wrap:wrap;
+    font-size: 18px;
+    background: linear-gradient(150deg, #1b8488, #1a936c);
+    padding: 25px;
+    border-radius: 25px;
+    color: white;
+}
+
+.about-ul{
+    font-size: 20px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: auto;
+}
+
+.about-li{
+    list-style: disc;
+}
+
+.feature{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+}
+
+
+/*.index-container-feed{*/
+/*    width: 1350px;*/
+/*    display: flex;*/
+/*    flex-flow: column;*/
+/*    justify-content: center;*/
+/*    background-color: white;*/
+/*}*/
+
+.a-news{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    padding: 10px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/*Кнопки*/
+
+.btn-pic{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-weight: bolder;
+    background-color: #36168c;
+    transition: 0.5s;
+    color: white;
+}
+
+.btn-pic:hover{
+    background-color: #57398f;
+}
+
+.btn-all-news{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bolder;
+    background-color: #095e5b;
+    transition: 0.5s;
+    color: white;
+}
+
+.btn-all-news:hover{
+    background-color: #1c9cad;
+}
+
+/*Изображения*/
+
+.img-about{
+    width: 45%;
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 10px;
+}
+
+.img-cl{
+    width: 20%;
+    height: 100%;
+}
+
+.partners{
+    width: 100%;
+    background: transparent;
+}
+
+.partners_wrapper{
+    padding: 25px 25px;
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+}
+
+.partners_items{
+    height: 250px;
+    width: 32%;
+    transition: 1s;
+    border: 1px solid grey;
+    border-radius: 20px;
+
+}
+
+
+/*.running_line {*/
+/*    padding-bottom: 80px!important;*/
+/*    width: 100%;*/
+/*    margin: 0;*/
+/*    box-sizing: border-box;*/
+/*    display: block;*/
+/*}*/
+
+/*.running_line_wrapper {*/
+/*    width: 100%;*/
+/*    border-top-width: 1px;*/
+/*    border-top-style: solid;*/
+/*    border-top-color: rgb(61, 61, 61);*/
+/*    border-bottom-width: 1px;*/
+/*    border-bottom-style: solid;*/
+/*    border-bottom-color: rgb(61, 61, 61);*/
+/*}*/
+/*.running_line_info {*/
+/*    font-style: normal;*/
+/*    font-weight: 500;*/
+/*    font-size: 40px;*/
+/*    text-transform: uppercase;*/
+/*    color: #000918;*/
+/*    display: block;*/
+/*    margin-block-start: 1em;*/
+/*    margin-block-end: 1em;*/
+/*    margin-inline-start: 0px;*/
+/*    margin-inline-end: 0px;*/
+/*}*/
+

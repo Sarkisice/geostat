@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    /*background: url(../img/bg/index3.jpg) no-repeat fixed;*/
+    background: linear-gradient(120deg,  #1349a1, #0a8c33);
+    background-size: cover;
+}
+
+/*Главный контейнер*/
+.sc-content{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 50px 25px;
+    flex-wrap: wrap;
+    background: transparent;
+}
+
+.my-container{
+    width: 1350px;
+}
+
+.container-content{
+    width: 1350px;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 25px 0;
+    row-gap: 25px;
+    min-height: 910px;
+    display: flex;
+}
+
+.scc-itm {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+.scc-items .scc-itm:nth-child(1) {
+    max-width: 330px;
+    width: 100%;
+}
+
+.m {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.left-content{
+    display: flex;
+    max-width: 34%;
+}
+
+.right-content{
+    max-width: 64%;
+}
+
+.scc-descr{
+    font-weight: 500;
+    color: white;
+}
+
+.scc-i-hdr{
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+.social-icons>li {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.social-icons a {
+    position: relative;
+    background-color: transparent;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: background-color .3s ease-in-out;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+}
+
+.social-icons a:hover {
+    background-color: #bba6ff;
+}
+
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    left: .65rem;
+    top: .65rem;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.staff-container{
+    width: 1350px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 25px 0;
+}
+
+.staff{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-flow: wrap;
+    row-gap: 25px;
+}
+
+.staff-content{
+    width: 49%;
+    display: flex;
+}
+
+.staff-left{
+    width: 35%;
+    height: auto;
+    display: flex;
+}
+
+.staff-right{
+    width: 65%;
+    height: auto;
+    padding-left: 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.text-staff {
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px white solid;
+}
+
+.text-staff:last-child{
+    border-bottom: none;
+}
+

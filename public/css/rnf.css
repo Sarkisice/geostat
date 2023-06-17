@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    background: linear-gradient(120deg,  #1349a1, #29984b);
+    background-size: cover;
+}
+
+.rnf-container{
+    justify-content: center;
+    height: auto;
+    width: auto;
+    display: flex;
+    padding: 50px 25px;
+    flex-wrap: wrap;
+    background: transparent;
+}
+
+.rnf-container-about{
+    width: 1350px;
+    display: block;
+    flex-wrap:wrap;
+    font-size: 20px;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.kartochka_proekta{
+    width: 1350px;
+    background: transparent;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.sv{
+    display: flex;
+    flex-flow: column;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    max-width: 52%;
+    background: #1b8488;
+    border-radius: 15px;
+}
+
+.sh{
+    font-size: 22px;
+    color: #2d4d7e;
+    font-weight: bolder;
+}
+
+.rez{
+    display: flex;
+    flex-flow: column;
+    width: 46%;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #0e8594;
+}
+
+.inf-z{
+    margin-top: 25px;
+    background: linear-gradient(90deg, #1b8488, #0e8594);
+    border-radius: 15px;
+    padding: 15px;
+}
