@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="{{asset('css/header.css')}}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 
 <header class="header">
     <div class="header-container">
@@ -15,6 +17,7 @@
                 </a>
             </div>
         </div>
+        <i class='bx bx-menu bx-flip-horizontal' id="menu-icon"></i>
         <nav>
             <ul>
                 <li class="header-nav-li"><a href="{{url('/cases')}}" class="a-nav">КЕЙСЫ</a></li>
@@ -41,14 +44,58 @@
                 header.style.boxShadow = 'none'
             }
         })
+
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.nav-list');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        };
     });
 </script>
 
+{{--<header>--}}
+{{--    <div class="header-container">--}}
+{{--        <div class="logo">--}}
+{{--            <a href="{{url('/')}}"><img src="/img/etc/logo.png" style="width: 50px; border-radius: 15px;"></a>--}}
+{{--            <div style="font-size: 20px; line-height: 1; font-weight: bolder">--}}
+{{--                <a href="{{url('/')}}" style="text-decoration: none; display: flex; flex-flow: column; padding: 5px">--}}
+{{--                    <p class="logo-text-top" style="color: #3a713b; margin-bottom: 0; margin-top: 0">АПК</p>--}}
+{{--                    <div style="display: flex">--}}
+{{--                        <p class="logo-text-bottom" style="color: #3a713b">РУС</p>--}}
+{{--                        <p class="logo-text-bottom" style="color: #4bb44d">АГРО</p>--}}
+{{--                        <p class="logo-text-bottom" style="color: #3a713b">АЛЬЯНС</p>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <nav style="align-items: center">--}}
+{{--            <ul class="nav-list">--}}
+{{--                <li class="header-nav-li"><a href="{{url('/category')}}" class="a-nav">Продукция</a>--}}
+{{--                    <ul class="list-container">--}}
+{{--                        <div style="border: 1px solid rgba(128, 128, 128, 0.5); border-top: none;border-bottom-left-radius: 15px; border-bottom-right-radius: 15px">--}}
 
-<!--<div class="header-text">-->
-<!--    <a href="index.blade.php"><img src="img/etc/logo.png" class="img-logo"></a>-->
-<!--    <div class="container-header-text-main">-->
-<!--        <a href="index.blade.php"style="color: #3a713b; text-decoration: none">АПК<br>РУС<a href="/"style="color: #4bb44d; text-decoration: none">АГРО</a><a href="index.blade.php"style="color: #3a713b; text-decoration: none">АЛЬЯНС</a>-->
+{{--                        </div>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li class="header-nav-li"><a href="{{url('/company')}}" class="a-nav">Компания</a></li>--}}
+{{--                <li class="header-nav-li"><a href="{{url('/about')}}" class="a-nav">Контакты</a></li>--}}
+{{--                @if (\Illuminate\Support\Facades\Auth::check())--}}
+{{--                    <a href="{{url('/profile')}}"><li class="header-nav-li"><button class="btn-nav">Кабинет</button></li></a>--}}
+{{--                    <li class="header-nav-li"><a href="{{url('/basket')}}"><button class="btn-nav-basket">&nbsp<div class="count"></div></button></a></li>--}}
+{{--                @else--}}
+{{--                    <li class="header-nav-li"><button class="btn-nav open_popup_singin" id="open_popup_singin" onclick="openPopUpAuth()">Войти</button></li>--}}
+{{--                    <li class="header-nav-li"><button class="btn-nav-basket open_popup_singin" onclick="openPopUpAuth()">&nbsp</button></li>--}}
+{{--                @endif--}}
+{{--            </ul>--}}
+{{--        </nav>--}}
+{{--    </div>--}}
+{{--</header>--}}
+{{--<!--<div class="header-text">-->--}}
+{{--<!--    <a href="index.blade.php"><img src="img/etc/logo.png" class="img-logo"></a>-->--}}
+{{--<!--    <div class="container-header-text-main">-->--}}
+{{--<!--        <a href="index.blade.php"style="color: #3a713b; text-decoration: none">АПК<br>РУС<a href="/"style="color: #4bb44d; text-decoration: none">АГРО</a><a href="index.blade.php"style="color: #3a713b; text-decoration: none">АЛЬЯНС</a>-->--}}
 <!--    </div>-->
 <!--    <div class="container-header-text-end">-->
 <!--        <ul class="list-all">-->
