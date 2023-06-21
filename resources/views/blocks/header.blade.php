@@ -24,6 +24,7 @@
                 <li class="header-nav-li"><a href="{{url('/rnf')}}" class="a-nav">РНФ</a></li>
                 <li class="header-nav-li"><a href="{{url('/equipment')}}" class="a-nav">ОБОРУДОВАНИЕ</a></li>
                 <li class="header-nav-li"><a href="{{url('/contacts')}}" class="a-nav">КОНТАКТЫ</a></li>
+                @if(!is_null(\Illuminate\Support\Facades\Auth::user()) && \Illuminate\Support\Facades\Auth::user()->is_admin)<li class="header-nav-li"><a href="{{url('/admin')}}" class="a-nav" style="background-color: #0a8c33; border-radius: 10px;">Админ панель</a></li> @endif
             </ul>
         </nav>
     </div>

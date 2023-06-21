@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PagesController::class, 'index']);
+Route::get('/', [PagesController::class, 'index'])->name('index');
 Route::get('/cases', [PagesController::class, 'cases']);
 Route::get('/case/{id}', [PagesController::class, 'case']);
 Route::get('/rnf', [PagesController::class, 'rnf']);
@@ -24,16 +24,20 @@ Route::get('/equipment', [PagesController::class, 'equipment']);
 Route::get('/contacts', [PagesController::class, 'contacts']);
 
 Route::get('/news/{id}', [PagesController::class, 'one_news']);
-Route::get('/admin', [PagesController::class, 'admin']);
-Route::get('/admin/news', [PagesController::class, 'aNews']);
-Route::get('/admin/box', [PagesController::class, 'aBox']);
-Route::get('/admin/equipment', [PagesController::class, 'aEquipment']);
-Route::get('/admin/staff', [PagesController::class, 'aStaff']);
+Route::group([
+    'middleware' => 'is_admin',
+    'prefix' => 'admin'
+    ],function (){
+    Route::get('/', [PagesController::class, 'admin']);
+    Route::resource('boxes' , '\App\Http\Controllers\Admin\Resources\BoxController');
+    Route::resource('feeds',\App\Http\Controllers\Admin\Resources\FeedController::class);
+    }
+);
+Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class,'logout']);
 
-Route::get('/admin/news/create', [PagesController::class, 'aNewsCreate']);
-Route::get('/admin/box/create', [PagesController::class, 'aBoxCreate']);
-Route::get('/admin/equipment/create', [PagesController::class, 'aEquipmentCreate']);
-Route::get('/admin/staff/create', [PagesController::class, 'aStaffCreate']);
-Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes([
+    'reset'=>false,
+    'register' => false,
+    'confirm' => false,
+    'verify' => false
+]);
